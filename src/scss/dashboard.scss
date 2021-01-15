@@ -5,23 +5,22 @@
 
   &__header {
     position: fixed;
-    right: 0;
     left: 0;
+    right: 0;
     top: 0;
     height: $db-header-height;
     display: flex;
+    align-items: center;
     justify-content: center;
     background: #fff;
     box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
     z-index: 1000;
   }
 
-
   &__new {
     margin-top: $db-header-height;
     padding: 1.5rem;
     background: #dadce0;
-
   }
 
   &__create {
@@ -48,13 +47,11 @@
   &__view {
     max-width: 1000px;
     margin: 0 auto;
-
   }
 
   &__table {
     padding: 1rem;
   }
-
 
   &__list-header {
     display: flex;
@@ -64,7 +61,6 @@
     font-size: 16px;
     margin-bottom: 10px;
     padding: 0 12px;
-
   }
 
   &__list {
@@ -86,13 +82,13 @@
     a {
       text-decoration: none;
       cursor: pointer;
-      font-size: 14px;
       color: #202124;
+      font-size: 14px;
 
       &:hover {
         text-decoration: underline;
-
       }
     }
   }
+
 }
