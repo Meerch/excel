@@ -3,16 +3,16 @@
 
 .excel__table {
   position: absolute;
-  right: 0;
   left: 0;
+  right: 0;
   top: $header-height + $toolbar-height + $formula-height;
-  overflowX: auto;
+  overflow-x: auto;
   padding-bottom: 2px;
 
   .row {
     display: flex;
     flex-direction: row;
-    mix-height: 20px;
+    min-height: 20px;
     height: $row-height;
   }
 
@@ -30,7 +30,6 @@
 
   .row-data {
     display: flex;
-
   }
 
   .column {
@@ -41,10 +40,10 @@
     background: #f8f9fa;
     min-width: 40px;
     width: $cell-width;
-    height: 100%;
     border: 1px solid $border-color;
     border-top: 0;
     border-left: 0;
+    height: 100%;
   }
 
   .cell {
@@ -53,27 +52,26 @@
     width: $cell-width;
     height: 100%;
     border: 1px solid #e2e3e3;
-    border-left: 0;
     border-top: 0;
+    border-left: 0;
     color: #111;
     white-space: nowrap;
     outline: none;
+
 
     &.selected {
       border: none;
       outline: 2px solid $primary-color;
       z-index: 2;
-
     }
   }
 
-  .col-resize,
-  .row-resize {
+  .col-resize, .row-resize {
     position: absolute;
     bottom: 0;
     right: 0;
-    opacity: 0;
     background: $primary-color;
+    opacity: 0;
     z-index: 1000;
 
     &:hover {
@@ -97,7 +95,6 @@
     &:hover {
       cursor: row-resize;
     }
-
   }
 
 }

@@ -24,16 +24,16 @@
     outline: none;
 
     &:hover {
-      border: 2px solid $border-color;
+      border: 1px solid $border-color;
     }
+
     &:focus {
       border: 2px solid #1a73e8;
     }
-
   }
 
-  & .button {
+  .button {
     @include button(red);
   }
-}
 
+}

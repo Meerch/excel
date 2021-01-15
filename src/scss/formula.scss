@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 
+
 .excel__formula {
   position: absolute;
   left: 0;
@@ -17,8 +18,6 @@
     text-align: center;
     border-right: 1px solid $border-color;
     min-width: $info-cell-width;
-    font-weight: 500;
-
   }
 
   .input {
@@ -28,6 +27,5 @@
     width: 100%;
     height: 100%;
     color: #000;
-
   }
 }
